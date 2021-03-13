@@ -10,16 +10,13 @@ body.light-mode {
   gap: 0.5rem;
 }
 
+a {
+  color: white;
+}
+
 body.dark-mode {
   background-color: #10171d;
   color: #dfdfdf;
-
-  .navbar {
-    background-color: #1f2931;
-    a {
-      color: white;
-    }
-  }
 
   .dark-mode-toggle > button {
     color: #999;
@@ -33,7 +30,7 @@ body.dark-mode {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #3c80ff;
+  background-color: #25303a;
   padding: 20px;
 }
 
@@ -152,4 +149,48 @@ input[type='checkbox'].dmcheck {
 .main-container {
   display: flex;
   flex-direction: column;
+}
+
+.name-container .name-title span {
+  background-color: #29e743;
+}
+
+.name-container .name-title {
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  font-size: 4.5em;
+  color: #29e743;
+}
+
+.name-container {
+  margin: 5rem 15rem auto 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blink-me {
+  animation: blinker 1.25s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  width: 500px;
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: auto;
+      width: 100px;
+    }
+  }
 }
