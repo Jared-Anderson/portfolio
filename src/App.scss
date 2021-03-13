@@ -148,3 +148,8 @@ input[type='checkbox'].dmcheck {
     background-color: #f6f6f6;
   }
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
