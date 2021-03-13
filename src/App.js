@@ -1,5 +1,6 @@
 import { Home } from './Components/Home/Home';
 import { About } from './Components/About/About';
+import { Resume } from './Components/Resume/Resume';
 
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -15,7 +16,7 @@ function App() {
               <Link to='/'>Home</Link>
             </span>
             <span>
-              <Link to='/about'>Resume</Link>
+              <Link to='/resume'>Resume</Link>
             </span>
             <span>
               <Link to='/about'>About</Link>
@@ -31,9 +32,9 @@ function App() {
             <Route path='/about'>
               <About />
             </Route>
-            {/* <Route path="/users">
-            <Users />
-          </Route>  */}
+            <Route path='/resume'>
+              <Resume />
+            </Route>
             <Route path='/'>
               <Home />
             </Route>

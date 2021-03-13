@@ -10,8 +10,9 @@ import {
   SiHtml5,
   SiNpm,
   SiGithub,
-  SiMysql,
   SiJavascript,
+  SiMicrosoftsqlserver,
+  SiReact,
 } from 'react-icons/si';
 
 export default function TechIKnow() {
@@ -29,39 +30,50 @@ export default function TechIKnow() {
         <div className='tech-container'>
           <span>
             <SiAngular />
+            Angular
+          </span>
+          <span>
+            <SiReact />
+            React
           </span>
           <span>
             <SiPython />
+            Python
           </span>
           <span>
             <SiRedux />
+            Reduc
           </span>
           <span>
-            <SiCsharp />
+            <SiCsharp />C Sharp
           </span>
           <span>
             <SiTypescript />
+            TypeScript
           </span>
           <span>
             <SiJavascript />
+            JavaScript
           </span>
           <span>
             <SiCss3 />
+            CSS3
           </span>
           <span>
             <SiHtml5 />
+            HTML5
           </span>
           <span>
             <SiNpm />
+            Npm
           </span>
           <span>
             <SiGithub />
+            Github
           </span>
           <span>
             <SiGit />
-          </span>
-          <span>
-            <SiMysql />
+            Git
           </span>
         </div>
       </div>
