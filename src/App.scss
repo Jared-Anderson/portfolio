@@ -31,7 +31,6 @@ body.dark-mode {
     justify-content: space-between;
     width: 100%;
     background-color: #25303a;
-    padding: 20px;
 }
 
 // .content {
@@ -149,26 +148,29 @@ input[type='checkbox'].dmcheck {
 .main-container {
     display: flex;
     flex-direction: column;
-}
-
-.name-container .name-title span {
-    background-color: #29e743;
+    width: auto;
 }
 
 body.dark-mode .name-container .name-title {
     font-family: Monaco, Consolas, Lucida Console, monospace;
-    font-size: 4.5em;
+    font-size: 2.5em;
     color: white;
+    span {
+        background-color: white;
+    }
 }
 
 .name-container .name-title {
     font-family: Monaco, Consolas, Lucida Console, monospace;
-    font-size: 4.5em;
+    font-size: 3.5rem;
     color: black;
+    padding: 0.5rem;
+    span {
+        background-color: black;
+    }
 }
 
 .name-container {
-    margin: 5rem 15rem auto 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,10 +187,9 @@ body.dark-mode .name-container .name-title {
 
 .tech-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
     grid-template-rows: auto;
     grid-gap: 1rem;
-    width: 500px;
     span {
         display: flex;
         flex-direction: column;
@@ -196,7 +197,7 @@ body.dark-mode .name-container .name-title {
         align-items: center;
         svg {
             height: auto;
-            width: 100px;
+            width: 50px;
         }
     }
 }

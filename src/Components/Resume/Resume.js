@@ -1,5 +1,10 @@
+import PdfViewer from '../PdfViewer';
 import React from 'react';
 
 export function Resume() {
-  return <div>Resume</div>;
+    return (
+        <div>
+            <PdfViewer />
+        </div>
+    );
 }
