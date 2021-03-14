@@ -11,7 +11,6 @@ import {
     SiNpm,
     SiGithub,
     SiJavascript,
-    SiMicrosoftsqlserver,
     SiReact,
 } from 'react-icons/si';
 
@@ -19,7 +18,7 @@ export default function TechIKnow() {
     return (
         <div style={{ padding: '1rem' }}>
             <h2 style={{ display: 'grid', justifyContent: 'center' }}>
-                Technologies I know
+                Technologies I use
             </h2>
             <div
                 style={{
@@ -31,50 +30,51 @@ export default function TechIKnow() {
                 <div className="tech-container">
                     <span>
                         <SiAngular />
-                        Angular
+                        <div>Angular</div>
                     </span>
                     <span>
                         <SiReact />
-                        React
+                        <div>React</div>
                     </span>
                     <span>
                         <SiPython />
-                        Python
+                        <div>Python</div>
                     </span>
                     <span>
                         <SiRedux />
-                        Redux
+                        <div>Redux</div>
                     </span>
                     <span>
-                        <SiCsharp />C Sharp
+                        <SiCsharp />
+                        <div>C Sharp</div>
                     </span>
                     <span>
                         <SiTypescript />
-                        TypeScript
+                        <div>TypeScript</div>
                     </span>
                     <span>
                         <SiJavascript />
-                        JavaScript
+                        <div>JavaScript</div>
                     </span>
                     <span>
                         <SiCss3 />
-                        CSS3
+                        <div>CSS3</div>
                     </span>
                     <span>
                         <SiHtml5 />
-                        HTML5
+                        <div>HTML5</div>
                     </span>
                     <span>
                         <SiNpm />
-                        Npm
+                        <div>Npm</div>
                     </span>
                     <span>
                         <SiGithub />
-                        Github
+                        <div>Github</div>
                     </span>
                     <span>
                         <SiGit />
-                        Git
+                        <div>Git</div>
                     </span>
                 </div>
             </div>

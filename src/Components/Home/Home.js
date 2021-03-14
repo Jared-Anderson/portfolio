@@ -6,12 +6,15 @@ export function Home() {
         <>
             <div className="name-container">
                 <span className="name-title">
-                    &gt; Jared Anderson
+                    &gt; My name is Jared Anderson
                     <span className="blink-me">&nbsp;</span>
-                    <p>
-                        I am a web developer. My passion is building simple,
-                        beautiful user experiences.
-                    </p>
+                    <div>
+                        <p>I am a web developer.</p>
+                        <div>
+                            My passion is building simple,
+                            <div>beautiful user experiences.</div>
+                        </div>
+                    </div>
                 </span>
             </div>
             <TechIKnow />
