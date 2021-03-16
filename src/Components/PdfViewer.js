@@ -12,7 +12,7 @@ export default function PdfViewer() {
     pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
     return (
-        <div>
+        <div style={{ width: '100%' }}>
             <Document
                 file={AndersonJResume2020}
                 onLoadSuccess={onDocumentLoadSuccess}
