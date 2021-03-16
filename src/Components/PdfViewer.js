@@ -1,13 +1,13 @@
-import React from 'react';
-import { Document } from 'react-pdf';
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 import AndersonJResume2020 from '../Assets/AndersonJResume2020.pdf';
 
 export default function PdfViewer() {
-    // const [numPages, setNumPages] = useState(null);
-    // const [pageNumber, setPageNumber] = useState(1);
+    const [ setNumPages] = useState(null);
+    const [pageNumber] = useState(1);
     function onDocumentLoadSuccess({ numPages }) {
-        // setNumPages(numPages);
+        setNumPages(numPages);
     }
     pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -17,7 +17,7 @@ export default function PdfViewer() {
                 file={AndersonJResume2020}
                 onLoadSuccess={onDocumentLoadSuccess}
             >
-                {/* <Page pageNumber={pageNumber} /> */}
+                <Page pageNumber={pageNumber} />
             </Document>
         </div>
     );
