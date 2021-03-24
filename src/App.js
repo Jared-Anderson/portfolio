@@ -5,10 +5,15 @@ import { Resume } from './Components/Resume/Resume';
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import DarkModeToggle from './Components/Toggles/DarkModeToggle';
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Jared Anderson's Portfolio</title>
+      </Helmet>
       <div>
         <nav className='navbar'>
           <span className='link-container'>
